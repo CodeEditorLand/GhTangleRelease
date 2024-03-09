@@ -25,7 +25,7 @@
     "@actions/github": "^2.0.0",
     "@iota/converter": "^1.0.0-beta.23",
     "@iota/core": "^1.0.0-beta.24",
-    "axios": "0.18.1"
+    "axios": "0.28.0"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5",
