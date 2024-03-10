@@ -1,44 +1,24 @@
 {
   "name": "gh-tangle-release",
-  "version": "0.0.1",
-  "private": false,
+  "version": "0.5.2",
   "description": "Create a release and adds metadata to the IOTA Tangle",
-  "homepage": "https://github.com/CodeEditorLand/Foundation#readme",
-  "bugs": {
-    "url": "https://github.com/CodeEditorLand/Foundation/issues"
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src/**/*.js tests/**/*.js --fix",
+    "test": "eslint src/**.js tests/**.js && jest --coverage",
+    "build": "ncc build src/main.js",
+    "precommit": "npm run build && git add dist/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeEditorLand/Foundation.git"
+    "url": "git+https://github.com/iotaledger/gh-tangle-release"
   },
-  "license": "SEE LICENSE IN LICENSE",
-  "author": {
-    "name": "Nikola R. Hristov",
-    "email": "nikola@nikolahristov.tech",
-    "url": "https://nikolahristov.tech"
-  },
-  "publisher": "playform",
-  "type": "module",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "ncc build src/main.js",
-    "precommit": "npm run build && git add dist/",
-    "prepublishOnly": "TypeScriptESBuild 'Source/**/*.ts'"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "src/tangle-release.js"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 0,
-        "functions": 0,
-        "lines": 0,
-        "statements": 0
-      }
-    },
-    "testEnvironment": "node"
-  },
+  "keywords": [
+    "actions",
+    "node"
+  ],
+  "author": "Martyn Janes <martyn.janes@iota.org>",
+  "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.0",
     "@actions/exec": "^1.0.2",
@@ -49,11 +29,29 @@
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
     "husky": "^3.1.0",
     "jest": "^24.8.0",
-    "typescript-esbuild": "0.3.6"
+    "prettier": "^1.19.1"
   },
-  "publishConfig": {
-    "access": "public"
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/tangle-release.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    }
   }
 }
