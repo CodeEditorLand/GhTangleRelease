@@ -39,13 +39,13 @@ The action will perform the following steps:
       {
          "name": "attach-1.zip",
          "size": 150752,
-         "url": "https://github.com/an-owner/test-repo/releases/download/v0.1.0/attach-1.zip",
+         "url": "HTTPS://GitHub.Com/an-owner/test-repo/releases/download/v0.1.0/attach-1.zip",
          "sig": "YQylonV2i+5KtwVN0FxTU7ssWflX+6fC29COSbFOmfQ="
       },
       {
          "name": "attach-2.zip",
          "size": 153054,
-         "url": "https://github.com/an-owner/test-repo/releases/download/v0.1.0/attach-2.zip",
+         "url": "HTTPS://GitHub.Com/an-owner/test-repo/releases/download/v0.1.0/attach-2.zip",
          "sig": "a+Rgpf5gs0lpCJ8wt+eymkTdo99RbcP0o1PgLCIT2NE="
       }
    ]
