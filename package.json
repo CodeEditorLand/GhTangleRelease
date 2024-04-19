@@ -3,6 +3,9 @@
 	"version": "0.0.1",
 	"private": false,
 	"description": "Create a release and adds metadata to the IOTA Tangle",
+	"keywords": [
+		"land"
+	],
 	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/GhTangleRelease#readme",
 	"bugs": {
 		"url": "HTTPS://GitHub.Com/CodeEditorLand/GhTangleRelease/issues"
