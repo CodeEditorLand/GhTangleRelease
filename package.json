@@ -7,9 +7,7 @@
 		"precommit": "npm run build && git add dist/"
 	},
 	"jest": {
-		"collectCoverageFrom": [
-			"src/tangle-release.js"
-		],
+		"collectCoverageFrom": ["src/tangle-release.js"],
 		"coverageThreshold": {
 			"global": {
 				"branches": 0,
