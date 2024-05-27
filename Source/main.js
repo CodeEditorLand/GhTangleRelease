@@ -1,5 +1,5 @@
-const run = require("./tangle-release");
+const run = require('./tangle-release');
 
 if (require.main === module) {
-	run();
+  run();
 }
