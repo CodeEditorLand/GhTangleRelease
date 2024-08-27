@@ -55,7 +55,7 @@ The action will perform the following steps:
 }
 ```
 
-## Usage
+## 🛠️ Usage
 
 Create a GitHub workflow in you repo e.g.
 `/.github/workflows/tangle-release.yml`. Most of the environment variables are
