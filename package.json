@@ -1,10 +1,15 @@
 {
-	"name": "gh-tangle-release",
+	"dependencies": {
+		"@actions/core": "1.11.1",
+		"@actions/exec": "1.1.1",
+		"@actions/github": "6.0.0",
+		"@iota/converter": "1.0.0-beta.30",
+		"@iota/core": "1.0.0-beta.30",
+		"axios": "1.7.7"
+	},
 	"description": "Create a release and adds metadata to the IOTA Tangle",
-	"main": "dist/index.js",
-	"scripts": {
-		"build": "ncc build src/main.js",
-		"precommit": "npm run build && git add dist/"
+	"devDependencies": {
+		"@zeit/ncc": "0.22.3"
 	},
 	"jest": {
 		"collectCoverageFrom": [
@@ -20,15 +25,10 @@
 		},
 		"testEnvironment": "node"
 	},
-	"dependencies": {
-		"@actions/core": "1.11.1",
-		"@actions/exec": "1.1.1",
-		"@actions/github": "6.0.0",
-		"@iota/converter": "1.0.0-beta.30",
-		"@iota/core": "1.0.0-beta.30",
-		"axios": "1.7.7"
-	},
-	"devDependencies": {
-		"@zeit/ncc": "0.22.3"
+	"main": "dist/index.js",
+	"name": "gh-tangle-release",
+	"scripts": {
+		"build": "ncc build src/main.js",
+		"precommit": "npm run build && git add dist/"
 	}
 }
