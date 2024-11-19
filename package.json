@@ -28,7 +28,6 @@
 	"main": "dist/index.js",
 	"name": "gh-tangle-release",
 	"scripts": {
-		"build": "ncc build src/main.js",
-		"precommit": "npm run build && git add dist/"
+		"build": "ncc build src/main.js"
 	}
 }
