@@ -5,7 +5,7 @@
 		"@actions/github": "6.0.0",
 		"@iota/converter": "1.0.0-beta.30",
 		"@iota/core": "1.0.0-beta.30",
-		"axios": "1.7.8"
+		"axios": "1.7.9"
 	},
 	"description": "Create a release and adds metadata to the IOTA Tangle",
 	"devDependencies": {
